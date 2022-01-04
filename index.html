@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="section__nav nav__section">
+      <div class="nav__section__hidden">
+        <ul>
+          <li data-key="1">Имя</li>
+          <li data-key="2">Фамилия</li>
+          <li data-key="3">Описание</li>
+          <li data-key="4">Цвет глаз</li>
+          <li id="reset">сброс</li>
+        </ul>
+      </div>
+      <div class="nav__section__button"><span></span></div>
+    </nav>
+    <div class="section__main main__section">
+      <div class="main__section__content content__section">
+        <table class="content__section__table table__section">
+          <thead>
+            <tr>
+              <td data-prop-name="firstName">
+                Имя<span>&DownArrowUpArrow;</span>
+              </td>
+              <td data-prop-name="lastName">
+                Фамилия<span>&DownArrowUpArrow;</span>
+              </td>
+              <td data-prop-name="about">
+                Описание<span>&DownArrowUpArrow;</span>
+              </td>
+              <td data-prop-name="eyeColor">
+                Цвет глаз<span>&DownArrowUpArrow;</span>
+              </td>
+            </tr>
+          </thead>
+          <tbody
+            class="table__section__tbody"
+            id="mainSectionTableBody"
+          ></tbody>
+        </table>
+        <div class="content__section__arrow">
+          <div class="prevArrow" id="prevArrow">
+            <button>&lAarr;prev</button>
+          </div>
+          <div class="nextArrow" id="nextArrow">
+            <button>next&rAarr;</button>
+          </div>
+        </div>
+      </div>
+      <div class="main__section__form">
+        <div class="form__close"><span>закрыть</span></div>
+        <form class="" action="." id="formSection">
+          <input type="text" name="firstName" placeholder="Имя" id="" />
+          <input type="text" name="lastName" placeholder="Фамилия" id="" />
+          <input
+            type="text"
+            name="phone"
+            placeholder="+7 (999) 999-999"
+            id=""
+          />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+            placeholder="Описание"
+          ></textarea>
+          <div>
+            <div>
+              <input
+                class="form__input__color"
+                type="color"
+                name="eyeColor"
+                placeholder="цвет глаз"
+                id="eyeColor"
+              />
+              <label for="eyeColor">Цвет глаз</label>
+            </div>
+            <button id="formButtonSend">изменить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

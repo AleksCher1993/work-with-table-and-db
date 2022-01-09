@@ -25,3 +25,5 @@
 -в терминале написать npm init для загрузки JSON-server
 
 -в терминале написать json-server --watch db/db.json для отслеживания изменения в работе с БД
+
+![workswithtable](img/tableworks.PNG)
